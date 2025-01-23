@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Kalamata Drone</title>
+</head>
+<body>
+    <div id="body-container">
+        <section id="landing-container">
+            <img id="landing-background" src="./img/landing-drone.png" alt="kalamata drone"  width="100%">
+            <nav>
+                <div id="nav-container">
+                    <img src="./img/Drone_logo.png" alt="kalamata drone" />
+                    <h5>
+                        <span>Photo</span>
+                        <span>Video</span>
+                        <span>Contact</span>
+                        <span><img src="./img/phone.png" alt="phone"/> </span>
+                        <span>+30 694 781 4932</span>
+                    </h5>
+                </div>
+            </nav>
+            <a id="set-language" onclick="switchlanguage()">
+                <img class="switchlanguage" src="./img/to-greek.png" alt="to-greek" />
+                <img class="switchlanguage hidden" src="./img/to-english.png" alt="to-english" />
+            </a>
+            <div id="landing-prices-container">
+                <h1><span>Photo & Video starting at</span>79.99&euro;</h1>
+            </div>
+        </section>
+        <section id="middle-section">
+            <div id="about-us">
+                <h1>About us</h1>
+                <p class="switchlanguage">
+                    Based in Kalamata, Greece, we are seasoned experts in drone services, video editing
+                    , and filmmaking. With years of experience, we specialize in aerial photography, short films, and documentaries, combining
+                    technical skill with a passion for storytelling. <br />
+                    From capturing stunning visuals to delivering polished, professional content, we bring
+                    your ideas to life with precision and creativity. Inspired by the beauty of drone photography and videography, we are dedicated to providing top-tier services
+                    that elevater your projects to new heights. Let us help your story take flight!
+                </p>
+                <p class="switchlanguage hidden">
+                    Με έδρα την Καλαμάτα, Ελλάδα, είμαστε έμπειροι επαγγελματίες στις υπηρεσίες drone, στο μοντάζ βίντεο και στη δημιουργία ταινιών. Με χρόνια εμπειρίας, ειδικευόμαστε 
+                    στην αεροφωτογραφία, στις ταινίες μικρού μήκους και στα ντοκιμαντέρ, συνδυάζοντας τεχνική εξειδίκευση με πάθος για την αφήγηση ιστοριών.  <br />
+                    Από τη σύλληψη εντυπωσιακών οπτικών μέχρι την παράδοση άρτιου και επαγγελματικού περιεχομένου, δίνουμε ζωή στις ιδέες σας με ακρίβεια και δημιουργικότητα. Εμπνευσμένοι από την ομορφιά της αεροφωτογραφίας και της βιντεοσκόπησης, δεσμευόμαστε να παρέχουμε υπηρεσίες κορυφαίας ποιότητας που αναδεικνύουν τα έργα σας.
+                    Αφήστε μας να βοηθήσουμε την ιστορία σας να απογειωθεί!
+                </p>
+            </div>
+            <div id="our-services">
+                <h1>Our Services</h1>
+                <p class="switchlanguage">
+                    -Real Estate Property Photography & videography <br />
+                    -Event Coverage (Weddings, Parties, Corporate Events) <br />
+                    -Landscape and Nature Filming <br />
+                    -Inspection Services (Buildings, Roofs, Solar Panels, etc) <br />
+                    -Agricultural Monitoring (Crop Health, Field Analysis) <br />
+                    -Construction Site Monitoring & Progress Reports <br />
+                    -Tourism and Hotel Promotion Videos <br />
+                    -Promotional and Marketing Content Creation <br />
+                    -Sports and Outdoor Activity Filming <br />
+                    -Marine and Coastal Filming (Boats, Ports, Beaches)
+                </p>
+                <p class="switchlanguage hidden">
+                    -Φωτογράφηση και Βιντεοσκόπηση Ακινήτων <br />
+                    -Κάλυψη Εκδηλώσεων (Γάμοι, Πάρτι, Εταιρικές Εκδηλώσεις) <br />
+                    -Βιντεοσκόπηση Τοπίων και Φύσης <br />
+                    -Υπηρεσίες Επιθεώρησης (Κτίρια, Στέγες, Φωτοβολταϊκά κ.λπ.) <br />
+                    -Παρακολούθηση Αγροτικών Καλλιεργειών (Υγεία Καλλιεργειών, Ανάλυση Χωραφιών) <br />
+                    -Παρακολούθηση Κατασκευαστικών Έργων και Αναφορές Προόδου <br />
+                    -Βίντεο Προώθησης Τουρισμού και Ξενοδοχείων <br />
+                    -Δημιουργία Προωθητικού και Διαφημιστικού Περιεχομένου <br />
+                    -Βιντεοσκόπηση Αθλητικών και Υπαίθριων Δραστηριοτήτων <br />
+                    -Βιντεοσκόπηση Θαλάσσιων και Παράκτιων Περιοχών (Σκάφη, Λιμάνια, Παραλίες)
+                </p>
+            </div>
+        </section>
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                <!-- Images will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        <section id="contactform">
+            <div id="contactform-logo">
+                <img src="./img/Drone_Logo.png"  alt="kalamata drone"/>
+                <div>
+                    <span><img src="./img/phone.png" alt="phone"/> </span>
+                    <span>+30 694 781 4932</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-form">
+                    <h1>Contact us</h1>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <input type="text" id="name" placeholder="Name" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-row">
+                            <textarea id="message" placeholder="Tell us about your product" required></textarea>
+                        </div>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="carousel-script.js"></script>
+    <script src="contact-script.js"></script>
+    <script src="switch-script.js"></script>
+</body>
+</html>

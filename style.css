@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Adobe Clean'; /* Give your font a name */
+    src: url('adobe-clean/AdobeClean-Regular.woff2') format('woff2'), /* Path to your font */
+         url('adobe-clean/AdobeClean-Regular.woff') format('woff'),
+         url('adobe-clean/AdobeClean-Regular.ttf') format('truetype');
+    font-weight: normal; /* Optional: Specify font weight */
+    font-style: normal;  /* Optional: Specify font style */
+  }
+
+#body-container {
+    max-width: 1872px;
+    width: 100%;
+    padding: 0px 0 25px 0;
+    margin: auto;
+}
+#landing-container {
+    width: 100%;
+    position: relative;
+}
+#landing-background {
+    width: 100%;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding : 35px 31px 0 40px;
+}
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 26px;
+}
+#nav-container>img {
+    padding: 20px 0 17px 31px;
+    width: 247px;
+    height: 43px;
+}
+nav h5 img, #contactform-logo span img {
+    margin-bottom: -3px;
+    padding: 0 0 0 0;
+}
+nav h5 {
+    padding: 0 8px 0 0;
+    margin: 0;
+}
+nav h5 span, #contactform-logo span {
+    padding: 0 24px 0 0;
+    line-height: 88px;
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+#set-language {
+    position: absolute;
+    top: 150px;
+    right: 37px;
+}
+#landing-prices-container {
+    position: absolute;
+    bottom: 64px;
+    right: 27px;
+}
+#landing-prices-container h1 {
+    margin: 0;
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 106px;
+    color: white;
+    font-weight:normal;
+}
+#landing-prices-container h1 span {
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 31px;
+    color: white;
+}
+#middle-section {
+    display: flex;
+    margin-top: 76px;
+    line-height: 40px;
+}
+#middle-section>div {
+    width: 50%;
+    padding: 10px 50px 0 50px;
+}
+#middle-section h1 {
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 55px;
+    margin: 20px 0;
+}
+#middle-section p {
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 25px;
+}
+#gallery {
+    padding: 0 50px;
+}
+#gallery h1 {
+    font-family: 'Adobe Clean', 'Times New Roman';
+    font-size: 55px;
+    margin: 20px 0;
+}
+.carousel-container {
+    width: 100%;
+    max-width: 1872px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+  
+.carousel-track {
+    height: 446px;
+    display: flex;
+    position: relative;
+    transition: transform 0.016s linear;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+  
+.carousel-slide {
+    flex: 0 0 457px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover {
+    transform: scale(1.05);
+}
+  
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close-modal {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #bbb;
+}
+
+#contactform {
+    position: relative;
+    margin-top: 106px;
+    width: 100%;
+    max-width: 1872px;
+    border-radius: 31px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactform-logo {
+    position: absolute;
+    top: 55px;
+    left: 74px;
+}
+#contactform-logo>img {
+    width: 247px;
+    height: 43px;
+}
+  
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.contact-form h1 {
+    font-family: 'Adobe Clean', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #000;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #666;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #333;
+}
+
+#set-language:hover {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    #contactform-logo {
+        left: calc(50% - 129px);
+    }
+    .container {
+        margin-top: 140px;
+    }
+    #middle-section {
+        display: block;
+    }
+    #middle-section>div {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 968px) {
+    #body-container {
+        padding-top: 0px;
+    }
+    #nav-container>img {
+        padding-left: 10px;
+    }
+    nav h5 {
+        padding-right: 10px;
+    }
+    nav h5>span:nth-child(1) {
+        display: none;
+    }
+    nav h5>span:nth-child(2) {
+        display: none;
+    }
+    nav h5>span:nth-child(3) {
+        display: none;
+    }
+    #landing-container {
+        border-radius: 31px;
+        min-height: 734px;
+        overflow: hidden;
+    }
+    #landing-container>img {
+        position: absolute;
+        height: 734px;
+        width: auto;
+        top: 0;
+        left: calc(50% - 685px);
+    }
+    #landing-prices-container h1 {
+        font-size: 65px;
+    }
+    #gallery {
+        padding: 10px 12px 0 12px;
+    }
+    #contactform {
+        margin-top: 20px;
+    }
+    .carousel-track {
+        height: 656px;
+    }
+    #landing-prices-container h1 span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem 1rem 5rem 1rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .contact-form h1 {
+        font-size: 4rem;
+    }
+    nav {
+        padding: 13px 16px 0 14px;
+    }
+    nav img {
+        padding-left: 15px;
+    }
+    #landing-prices-container {
+        bottom: 5px;
+        right: 39px;
+    }
+    nav h5 span {
+        padding: 0 8px 0 0;
+    }
+    #middle-section>div {
+        padding: 10px 12px 0 12px;
+        width: calc(100% - 24px);
+    }
+    #middle-section p {
+        font-size: 23px;
+    }
+}

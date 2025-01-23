@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-BoldIt.eot');
+    src: local('AdobeClean-BoldIt'),
+        url('AdobeClean-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-BoldIt.woff2') format('woff2'),
+        url('AdobeClean-BoldIt.woff') format('woff'),
+        url('AdobeClean-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Clean SemiCondensed';
+    src: url('AdobeClean-BoldSemiCnIt.eot');
+    src: local('AdobeClean-BoldSemiCnIt'),
+        url('AdobeClean-BoldSemiCnIt.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-BoldSemiCnIt.woff2') format('woff2'),
+        url('AdobeClean-BoldSemiCnIt.woff') format('woff'),
+        url('AdobeClean-BoldSemiCnIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-It.eot');
+    src: local('AdobeClean-It'),
+        url('AdobeClean-It.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-It.woff2') format('woff2'),
+        url('AdobeClean-It.woff') format('woff'),
+        url('AdobeClean-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-Regular.eot');
+    src: local('AdobeClean-Regular'),
+        url('AdobeClean-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-Regular.woff2') format('woff2'),
+        url('AdobeClean-Regular.woff') format('woff'),
+        url('AdobeClean-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-Bold.eot');
+    src: local('AdobeClean-Bold'),
+        url('AdobeClean-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-Bold.woff2') format('woff2'),
+        url('AdobeClean-Bold.woff') format('woff'),
+        url('AdobeClean-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-Light.eot');
+    src: local('AdobeClean-Light'),
+        url('AdobeClean-Light.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-Light.woff2') format('woff2'),
+        url('AdobeClean-Light.woff') format('woff'),
+        url('AdobeClean-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Clean SemiCondensed';
+    src: url('AdobeClean-SemiCnIt.eot');
+    src: local('AdobeClean-SemiCnIt'),
+        url('AdobeClean-SemiCnIt.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-SemiCnIt.woff2') format('woff2'),
+        url('AdobeClean-SemiCnIt.woff') format('woff'),
+        url('AdobeClean-SemiCnIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Clean SemiCondensed';
+    src: url('AdobeClean-SemiCn.eot');
+    src: local('AdobeClean-SemiCn'),
+        url('AdobeClean-SemiCn.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-SemiCn.woff2') format('woff2'),
+        url('AdobeClean-SemiCn.woff') format('woff'),
+        url('AdobeClean-SemiCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('AdobeClean-LightIt.eot');
+    src: local('AdobeClean-LightIt'),
+        url('AdobeClean-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-LightIt.woff2') format('woff2'),
+        url('AdobeClean-LightIt.woff') format('woff'),
+        url('AdobeClean-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Clean SemiCondensed';
+    src: url('AdobeClean-BoldSemiCn.eot');
+    src: local('AdobeClean-BoldSemiCn'),
+        url('AdobeClean-BoldSemiCn.eot?#iefix') format('embedded-opentype'),
+        url('AdobeClean-BoldSemiCn.woff2') format('woff2'),
+        url('AdobeClean-BoldSemiCn.woff') format('woff'),
+        url('AdobeClean-BoldSemiCn.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
