@@ -46,7 +46,7 @@ nav h5 {
     padding: 0 8px 0 0;
     margin: 0;
 }
-nav h5 span, #contactform-logo span {
+nav h5 a, #contactform-logo span {
     padding: 0 24px 0 0;
     line-height: 88px;
     font-family: 'Adobe Clean', 'Times New Roman';
@@ -54,6 +54,9 @@ nav h5 span, #contactform-logo span {
     color: white;
     text-decoration: none;
     font-weight: normal;
+}
+nav h5 a:hover {
+    text-decoration: underline;
 }
 #set-language {
     position: absolute;
@@ -79,7 +82,7 @@ nav h5 span, #contactform-logo span {
 }
 #middle-section {
     display: flex;
-    margin-top: 76px;
+    margin-top: 99px;
     line-height: 40px;
 }
 #middle-section>div {
@@ -97,6 +100,7 @@ nav h5 span, #contactform-logo span {
 }
 #gallery {
     padding: 0 50px;
+    margin-top: 80px;
 }
 #gallery h1 {
     font-family: 'Adobe Clean', 'Times New Roman';
@@ -272,6 +276,14 @@ button:hover {
     display: none;
 }
 
+@media (max-width: 1533px) {
+    #landing-prices-container {
+        position: absolute;
+        bottom: 19px;
+        right: 27px;
+    }
+}
+
 @media (max-width: 1366px) {
     #contactform-logo {
         left: calc(50% - 129px);
@@ -287,7 +299,7 @@ button:hover {
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1080px) {
     #body-container {
         padding-top: 0px;
     }
@@ -297,13 +309,13 @@ button:hover {
     nav h5 {
         padding-right: 10px;
     }
-    nav h5>span:nth-child(1) {
+    nav h5>a:nth-child(1) {
         display: none;
     }
-    nav h5>span:nth-child(2) {
+    nav h5>a:nth-child(2) {
         display: none;
     }
-    nav h5>span:nth-child(3) {
+    nav h5>a:nth-child(3) {
         display: none;
     }
     #landing-container {
@@ -328,7 +340,7 @@ button:hover {
         margin-top: 20px;
     }
     .carousel-track {
-        height: 656px;
+        height: 490px;
     }
     #landing-prices-container h1 span {
         font-size: 24px;
@@ -336,6 +348,10 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    #landing-prices-container {
+        bottom: 5px;
+        right: 23px;
+    }
     .container {
         padding: 1rem 1rem 5rem 1rem;
     }
@@ -357,7 +373,7 @@ button:hover {
         bottom: 5px;
         right: 39px;
     }
-    nav h5 span {
+    nav h5 a {
         padding: 0 8px 0 0;
     }
     #middle-section>div {
@@ -366,5 +382,94 @@ button:hover {
     }
     #middle-section p {
         font-size: 23px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #nav-container>img {
+        width: 212px;
+        height: 36px;
+    }
+    nav h5 a, #contactform-logo span {
+        /* padding: 0 24px 0 0; */
+        line-height: 78px;
+        font-family: 'Adobe Clean', 'Times New Roman';
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    nav h5 img, #contactform-logo span img {
+        margin-bottom: -3px;
+        padding: 0 0 0 0;
+        width: 10%;
+    }
+    #middle-section p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    #middle-section h1 {
+        font-family: 'Adobe Clean', 'Times New Roman';
+        font-size: 39px;
+        margin: 20px 0;
+    }
+    #gallery h1 {
+        font-size: 39px;
+    }
+    #middle-section {
+        margin-top: 35px;
+    }
+    #gallery {
+        margin-top: 35px;
+    }
+    .contact-form h1 {
+        font-size: 3rem;
+    }
+    #landing-container>img {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #landing-container {
+        border-radius: 31px;
+        min-height: 600px;
+        overflow: hidden;
+    }
+    #set-language {
+        position: absolute;
+        top: 129px;
+        right: 37px;
+    }
+    .carousel-track {
+        height: 494px;
+    }
+}
+
+@media (max-width: 548px) {
+    nav h5 a, #contactform-logo span {
+        font-size: 16px;
+        line-height: 65px;
+    }
+    nav h5 {
+        padding-right: 0px;
+    }
+    #nav-container>img {
+        width: 172px;
+        height: 26px;
+    }
+    #landing-prices-container h1 span {
+        font-size: 19px;
+    }
+    #landing-prices-container h1 {
+        font-size: 51px;
+    }
+    #landing-container {
+        border-radius: 31px;
+        min-height: 532px;
+        overflow: hidden;
     }
 }
