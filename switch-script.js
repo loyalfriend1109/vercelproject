@@ -5,6 +5,6 @@ function switchlanguage() {
 
     // Loop through each element and toggle the "hidden" class
     elements.forEach(element => {
-      element.classList.toggle('hidden');
+      // element.classList.toggle('hidden');
     });
   }
