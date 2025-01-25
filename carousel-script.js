@@ -1,15 +1,38 @@
+
 // Array of image URLs - replace these with your actual image URLs
 const images = [
-  'https://picsum.photos/300/600?random=1',
-  'https://picsum.photos/500/300?random=2',
-  'https://picsum.photos/300/400?random=3',
-  'https://picsum.photos/600/300?random=4',
-  'https://picsum.photos/300/700?random=5',
-  'https://picsum.photos/300/300?random=6',
+  // 'https://picsum.photos/300/600?random=1',
+  // 'https://picsum.photos/500/300?random=2',
+  // 'https://picsum.photos/300/400?random=3',
+  // 'https://picsum.photos/600/300?random=4',
+  // 'https://picsum.photos/300/700?random=5',
+  // 'https://picsum.photos/300/300?random=6',
+  'img/1.png',
+  'img/2.png',
+  'img/3.png',
+  'img/4.png',
+  'img/5.png',
+  'img/6.png',
+  'img/7.jpg',
+  'img/8.jpg',
 ];
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+// Check if the user is on a mobile device
+if (window.matchMedia("(max-width: 768px)").matches) {
+  // Select the image element
+  const imgElement = document.querySelector("#landing-background"); // Replace #my-image with your image's selector
+  
+  // Check if the image exists and update its src
+  if (imgElement) {
+    imgElement.src = "img/landing-drone-mobile.png"; // Replace with the mobile-specific image URL
+  }
+}
 
+// Adjust carousel speed
+const carouselSpeed = isMobile ? 100 : 200; // Slower speed on mobile
 class Carousel {
-  constructor(images, speed = 200) {
+
+  constructor(images, speed = carouselSpeed) {
     this.images = images;
     this.speed = speed;
     this.track = document.querySelector('.carousel-track');

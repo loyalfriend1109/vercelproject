@@ -16,6 +16,8 @@
 #landing-container {
     width: 100%;
     position: relative;
+    border-radius: 31px;
+    overflow: hidden;
 }
 #landing-background {
     width: 100%;
@@ -38,7 +40,7 @@ nav {
     width: 247px;
     height: 43px;
 }
-nav h5 img, #contactform-logo span img {
+nav h5 img, #contactform-logo a img {
     margin-bottom: -3px;
     padding: 0 0 0 0;
 }
@@ -46,7 +48,7 @@ nav h5 {
     padding: 0 8px 0 0;
     margin: 0;
 }
-nav h5 a, #contactform-logo span {
+nav h5 a, #contactform-logo a {
     padding: 0 24px 0 0;
     line-height: 88px;
     font-family: 'Adobe Clean', 'Times New Roman';
@@ -54,6 +56,9 @@ nav h5 a, #contactform-logo span {
     color: white;
     text-decoration: none;
     font-weight: normal;
+}
+#contactform-logo a:hover {
+    text-decoration: underline;
 }
 nav h5 a:hover {
     text-decoration: underline;
@@ -332,7 +337,8 @@ button:hover {
         height: 734px;
         width: auto;
         top: 0;
-        left: calc(50% - 685px);
+        left: 50%;
+        transform: translateX(-50%);
     }
     #landing-prices-container h1 {
         font-size: 65px;
@@ -391,6 +397,13 @@ button:hover {
     #middle-section p {
         font-size: 23px;
     }
+    #set-language {
+        top: 131px;
+        right: 20px;
+    }
+    #set-language img {
+        width: 80%;
+    }
 }
 
 
@@ -399,7 +412,7 @@ button:hover {
         width: 212px;
         height: 36px;
     }
-    nav h5 a, #contactform-logo span {
+    nav h5 a {
         /* padding: 0 24px 0 0; */
         line-height: 78px;
         font-family: 'Adobe Clean', 'Times New Roman';
@@ -408,7 +421,10 @@ button:hover {
         text-decoration: none;
         font-weight: normal;
     }
-    nav h5 img, #contactform-logo span img {
+    #contactform-logo a {
+        padding: 0 10px 0 0;
+    }
+    nav h5 img, #contactform-logo a img {
         margin-bottom: -3px;
         padding: 0 0 0 0;
         width: 10%;
@@ -444,13 +460,13 @@ button:hover {
     }
     #landing-container {
         border-radius: 31px;
-        min-height: 600px;
+        /* min-height: 600px; */
         overflow: hidden;
     }
     #set-language {
         position: absolute;
-        top: 129px;
-        right: 37px;
+        top: 104px;
+        right: 14px;
     }
     .carousel-track {
         height: 494px;
@@ -458,7 +474,7 @@ button:hover {
 }
 
 @media (max-width: 548px) {
-    nav h5 a, #contactform-logo span {
+    nav h5 a {
         font-size: 16px;
         line-height: 65px;
     }
