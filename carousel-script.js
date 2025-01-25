@@ -32,7 +32,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   
   // Check if the image exists and update its src
   if (imgElement) {
-    imgElement.src = "img/landing-drone-mobile.png"; // Replace with the mobile-specific image URL
+    imgElement.src = "img/landing-drone-mobile.webp"; // Replace with the mobile-specific image URL
   }
 }
 
