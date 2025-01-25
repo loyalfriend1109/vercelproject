@@ -282,6 +282,7 @@ button:hover {
         bottom: 19px;
         right: 27px;
     }
+
 }
 
 @media (max-width: 1366px) {
@@ -296,6 +297,9 @@ button:hover {
     }
     #middle-section>div {
         width: calc(100% - 100px);
+    }
+    #landing-prices-container h1 {
+        font-size: 92px;
     }
 }
 
